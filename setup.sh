@@ -43,4 +43,3 @@ conda env list
 
 # Optional
 #sudo initctl restart jupyter-server --no-wait
-git clone https://github.com/deforum-art/deforum-stable-diffusion
