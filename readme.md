@@ -4,8 +4,8 @@ Instructions to use this repo:
 1. Open the terminal from the Launch page
 2. Run ```chmod +x ./setup.sh``` to give permissions to run the setup shell script
 3. Run ```./setup.sh``` to create and set up the conda environment to be used within the notebook
-4. Open Deforum_AWS.ipynb and select the ```conda_deforum``` kernel
-5. Make required modifications to the first paragraph and hit run all (This can take quite a while - It takes about 7 seconds per frame to generate, and then upto 5 minutes to generate the video from the images
+4. Open ```Deforum_AWS.ipynb``` and select the ```conda_deforum``` kernel
+5. Make required modifications to the *first paragraph* and hit run all (This can take quite a while - It takes about 7 seconds per frame to generate, and then upto 5 minutes to generate the video from the images)
 
 
 
