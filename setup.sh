@@ -1,5 +1,5 @@
 #!/bin/bash -ex
-
+rm -r .myenv
 WORKING_DIR=./.myenv
 # get the env name
 line=$(head -n 1 environment.yml)
@@ -41,5 +41,7 @@ conda config --add envs_dirs "$PWD/$WORKING_DIR/miniconda/envs"
 # Activate the kernel by list the envs
 conda env list
 
+python -m ipykernel install --user --name deforum --display-name "deforum"
 # Optional
-#sudo initctl restart jupyter-server --no-wait
+sudo initctl restart jupyter-server --no-wait
+
