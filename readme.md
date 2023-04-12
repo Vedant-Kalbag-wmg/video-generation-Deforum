@@ -15,7 +15,7 @@ video-generation-Deforum
 ├── audio.wav                             -> This file will be auto-downloaded based on the youtube link provided
 ├── configs                               -> Deforum config files
 ├── Deforum_AWS.ipynb                     -> Main notebook (RUN THIS)
-├── Promot_Generation.ipynb               -> Notebook used to generate variations for a prompt based on creative style, subject and object combinations
+├── PromptGeneration.ipynb                -> Notebook used to generate variations for a prompt based on creative style, subject and object combinations
 ├── deforum-stable-diffusion              -> Repo for deforum 
 ├── environment.yml                       -> Used to create the conda env / notebook kernel
 ├── readme.md                             -> Setup and run instructions
