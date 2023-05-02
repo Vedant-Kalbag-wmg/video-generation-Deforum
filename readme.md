@@ -12,19 +12,28 @@ Instructions to use this repo:
 Folder structure (after running the notebook, as some files/folders will be created during the run):
 ```
 video-generation-Deforum
-├── audio.wav                             -> This file will be auto-downloaded based on the youtube link provided
-├── configs                               -> Deforum config files
+│
+│ FILES REQUIRING INTERACTION
+├── setup.sh                              -> Shell script used to set up the environment
 ├── Deforum_AWS.ipynb                     -> Main notebook (RUN THIS)
 ├── PromptGeneration.ipynb                -> Notebook used to generate variations for a prompt based on creative style, subject and object combinations
-├── deforum-stable-diffusion              -> Repo for deforum 
+├── stable-diffusion.ipynb                -> Notebook for playing around with stable diffusion to test prompts (NOTE: results using this may be very different to deforum)
+│
+│ FILES NOT REQUIRING ANY USER INTERACTION
+├── audio.wav                             -> This file will be auto-downloaded based on the youtube link provided (created when Deforum_AWS.ipynb is run)
+├── configs                               -> Deforum config files (created when Deforum_AWS.ipynb is run)
+├── deforum-stable-diffusion              -> Repo for deforum, will be downloaded automatically when you run Deforum_AWS.ipynb
+│
+│ ENVIRONMENT SETUP FILES
 ├── environment.yml                       -> Used to create the conda env / notebook kernel
 ├── readme.md                             -> Setup and run instructions
 ├── requirements.txt                      -> Python requirements
+│
 ├── resources                             
-│   ├── models                            -> Path where weights and checkpoints are downloaded to
+│   ├── models                            -> Path where weights and checkpoints are downloaded to (downloaded automatically when you run Deforum_AWS.ipynb)
 │   └── outputs                           -> OUTPUT PATH FOR GENERATED PHOTO/VIDEO
-├── setup.sh                              -> Shell script used to set up the environment
-├── source_separated                      -> Created when running demucs to extract stems
+│
+├── source_separated                      -> Created when running demucs to extract stems (created when Deforum_AWS.ipynb is run)
 │   └── htdemucs_ft
 └── start_env.sh                          -> IGNORE, UNUSED
 
